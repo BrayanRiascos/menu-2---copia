@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+    <title>Tablas</title>
+
+</head>
+
+<body>
+    <header>
+        
+         <div> <img src="imagenes/ca-2.jpg" width="100%" height="350px" ></div>  
+          
+                    <nav>
+                        <ul>
+                            <li><a href="../index.html">Inicio</a></li>
+                        
+                            <li><a href="imagen.html">Imágenes
+                            </a>
+                            </li>
+                            <li><a href="listas.html">Listas
+                            </a>
+                            </li>
+                            <li><a href="enlaces.html">Enlaces</a></li>
+                                <li><a href="formularios.html">Formulario</a></li> 
+                                <li><a href="tablas.html">Tablas</a></li>
+                                <li><a href="videoaudio.html">Videos y audio</a></li>      
+                        </ul>
+
+                    </nav>
+                <div id="con_f_t">
+                    <div id="con_f"><h1>Formularios en HTML</h1>
+                    </div>
+                    <div id="con_t">
+                        <P>Los formularios HTML son elementos de las páginas web que nos 
+                            sirven para recuperar información del usuario y enviarla al servidor para que pueda ser procesada.</P>
+                        <P>La sintaxis para definir un formulario será mediante el elemento form: </P>     
+                        <div id="con_f"><h2>Campos de formularios</h2>
+                        </div>
+                       
+                       
+                        <div id="con_t"><h2 >Campos de entrada de datos</h2>
+                        </div>
+                        <div id="con_t"><h3  >Campos de entrada de textos</h3>
+                        </div>
+                        <p>Permite insertar texto en un formulario.</p>
+                        <p>Para definir un campo de texto lo haremos de la siguiente forma:</p>
+                        <img src="imagenes/texto.png">
+                        <br>
+                        <p>Resultado: </p>
+                            <input type="text" id="identificador" size="30"
+                            name="nombre" value="Ingrese nombre"/>
+                        
+                        <div id="con_t"><h3  >Contraseñas</h3>
+                        </div>
+                        <p>Cuando un usuario inserte una contraseña dentro de un formulario no se podra ver</p>
+                        <p>Para insertar un campo que acepte contraseñas dentro de un formulario vamos
+                             a utilizar un tipo “password”:</p>
+                        <img src="imagenes/contraseña.png">
+                        <br>
+                        <p>Resultado: </p>
+                        <input type="password" id="clave" size="30" name="clave"/>
+
+                        <div id="con_t"><h3  >Checkbox</h3>
+                        </div>
+                        <p>Permite capturar un dato del usuario mediante un elemento de check.
+                             El check puede tener dos valores, seleccionado o no seleccionado</p>
+                        <p>Se define utilizando el elemento “checkbox”. </p>
+                        <img src="imagenes/checkbox.png">
+                        <br>
+                        <p>Resultado: </p>
+                        <input type="checkbox" id="identificador" name="nombre" checked="checked"/>Texto del checkbox
+                        
+                        <div id="con_t"><h3  >Radios</h3>
+                        </div>
+                        <p>Ofrece un conjunto de opciones al usuario de tal manera que solo pueda elegir una de ellas.</p>
+                        <p>Se define utilizando el elemento “radio”. </p>
+                        <img src="imagenes/radio.png">
+                        <br>
+                        <p>Resultado: </p>
+                        <input type="radio" id="identificador" value="valor" name="nombre"/>
+
+                        <p>Grupo de radios:</p>
+                        <P>Rango de edad:</P>
+                        <input type="radio" id="menos18" value="menos18" name="edad"/>Menos de 18
+                        <input type="radio" id="18a30" value="18a30" name="edad"/>18 a 30
+                        <input type="radio" id="31a50" value="31a50" name="edad"/>31 a 50
+                        <input type="radio" id="mas50" value="mas50" name="edad"/>Más de 50
+
+                        <div id="con_t"><h3  >Botones</h3>
+                        </div>
+                        <p>Mediante los botones podremos realizar operaciones de envío del formulario, 
+                            de manipulación de datos, borrado,…</p>
+                        <p>Se define utilizando el elemento “button”. </p>
+                        <img src="imagenes/radio.png">
+                        <br>
+                        <p>Resultado: </p>
+                        <input type="button" value="TextoBotón"/>
+
+                      
+                </div>   
+                
+               
+
+        
+</header>
+    
+</body>
+</html>
