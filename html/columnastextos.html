@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+    <title>Columna de textos</title>
+
+</head>
+
+<body>
+    <header>
+         <div> <img src="imagenes/ca-2.jpg" width="100%" height="350px" ></div>  
+         <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="imagen.html">Imagenes</a> </li>
+                <li><a href="columnastextos.html">Columna de textos</a></li>
+                <li><a href="transparencia.html">Transparencia y degradados</a></li>
+                <li><a href="animaciones.html">Animaciones</a></li>
+                <li><a href="canvas.html">Canvas</a></li>
+                <li><a href="adaptacionmovil.html">Adaptacion Movil</a></li>
+                <li><a href="listas.html">Listas</a></li>
+                <li><a href="enlaces.html">Enlaces</a></li>
+                <li><a href="formularios.html">Formulario</a></li> 
+                <li><a href="tablas.html">Tablas</a></li>
+                <li><a href="videoaudio.html">Videos y audio</a></li>       
+            </ul>
+        </nav>               
+</header>
+
+<section class="section">
+
+    <div class="articulos">
+        <article class="article">
+          <h1>Columnas de texto</h3>
+          <p>Usando HTML mas CSS</p>  
+          <h1>Propieades a usar</h1>
+          <h2>Column count nos permite decidir en cuantas columnas queremos dividir en listado de item</h1>
+          <pre>column-count:2</pre> 
+          <h1>Column grap, permite definir que espacio deseamos entre columnas 4px, 2px</h1>
+          <pre>column-gap:10px </pre>
+          <h1>Column rule, nos permite manipular tres caracteristicas que en ordens serian, grosor de las linea 4px, tipo de linea y por ultimo el color</h1>
+          <pre>column-rule:4px dotted gray;</pre>
+            <br>
+            <h1>Pasos para iniciar a usar texto el columnas:</h1>
+            <p>Dentro de un DIV, haciendo uso de un identificador o clase, escribimos el listado de lo que deseamos este en columnas, en este caso ciudades de colombia, y dentro del DIV usamos la etiqueta < li> para poder listar los item que deseamos queden en columnas. </p> 
+        </article>
+
+        <article class="article">
+
+            <pre>&lt;div id="columnas"&gt;
+                &lt;li&gt;Cali&lt;/li&gt;
+                &lt;li&gt;Popayan&lt;/li&gt;
+                &lt;li&gt;Pasto&lt;/li&gt;
+                &lt;li&gt;Armenia&lt;/li&gt;
+                &lt;li&gt;Cartagena&lt;/li&gt;
+                &lt;li&gt;Cucota&lt;/li&gt;
+                &lt;li&gt;Barranquilla&lt;/li&gt;
+                &lt;li&gt;Bogota DC&lt;/li&gt;
+                &lt;li&gt;Pereira&lt;/li&gt;
+                &lt;li&gt;Santa Marta&lt;/li&gt;	
+                &lt;li&gt;Villavicencio&lt;/li&gt;
+                &lt;li&gt;Manizales&lt;/li&gt;				
+                &lt;li&gt;Medellin&lt;/li&gt;
+                &lt;li&gt;Neiva&lt;/li&gt;
+                &lt;li&gt;Yopal&lt;/li&gt;
+                &lt;li&gt;Riohacha&lt;/li&gt;
+           &lt;/div&gt;
+           </pre>
+
+           <p>Una vez se tenga el listado de items a colocar en columnas, se hace uso del identificador o clase usado, en este caso seria el #columnas, este identificado se usa en la hoja de estilo.css el cual debe quedar de la siguiente manera:</p> 
+           <br>
+
+           <pre>#columnas{
+            column-count:4;
+            column-gap:20px;
+            column-rule:4px dotted gray;
+             }
+         </pre>
+        
+         <h1>Y como resutado final tenemos las siguientes columnas, con la respetiva informacion: </h1>
+            <div id="columnas">
+                <li>Cali</li>
+                <li>Popayan</li>
+                <li>Pasto</li>
+                <li>Armenia</li>
+                <li>Cartagena</li>
+                <li>Cucuota</li>
+                <li>Barranquilla</li>
+                <li>Bogota DC</li>
+                <li>Pereira</li>
+                <li>Santa Marta</li>	
+                <li>Villavicencio</li>
+                <li>Manizales</li>				
+                <li>Medellin</li>
+                <li>Neiva</li>
+                <li>Yopal</li>
+                <li>Riohacha</li>
+           </div>
+           <h2>Recordemos que en la hoja de estilos podemos utilizar diferentes propiedades de diseño...</h2>
+           <pre>#columnas{
+            column-count:4;
+            column-gap:20px;
+            column-rule:4px double black;
+           <span class="rojo"><b>list-style: none;</b></span>  
+         } 
+         </pre>
+        </article>
+
+        <article class="article">
+            <h1>Tipos de lineas</h1>
+
+            <p>
+                En lo referente a los tipos de separadores entre columnas de texto existen las siguientes posibilidades:
+                <br>
+                <br>
+                <b>none:</b>sin línea separadora.
+                <br>
+                <b>solid:</b> línea sólida.
+                <br>
+                <b>dotted:</b> línea punteada.
+                <br>
+                <b>dashed:</b> línea discontinua (segmentos cortos de línea).
+                <br>
+                <b>double:</b> doble línea paralela.
+                <br>
+                <b>groove:</b>línea en relieve 3D hacia adentro.
+                <br>
+                <b>ridge:</b> línea en relieve 3D hacia afuera.
+                <br>
+                <b>inset:</b> linea con el color en bajorelieve.
+                <br>
+                <b>outset: </b>línea que simula el relieve.   
+            </p>
+        </article>
+
+    </div>
+</section>
+    
+</body>
+</html>

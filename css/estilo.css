@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+*{ margin: 5px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-size:'Oswald', sans-serif;
+    text-decoration: none;
+    
+}
+#con_i_t {
+    height: 100%;
+    width: 100%;
+    background: #F2CF1D;
+    margin: 5px;
+    color: white;
+   
+    border: red  3px solid;
+    overflow: hidden;
+    
+    }
+
+nav a{
+color: inherit;
+font-size: 16px;
+
+
+}
+nav li{
+    display: inline-block;
+    width: 150px;
+	height: 40px;
+    background-color:#5CACF2 ;
+    text-align: center;
+    position: relative;
+    border: 1px solid black;
+    padding: 10px 10px;
+}
+nav li:hover{
+	background-color:#F2CF1D;
+	color: black;
+	
+}
+nav li>ul{
+	display: none;
+}
+nav li:hover>ul{
+	display: inline-block;
+	position: absolute;
+	top: 40px;
+	left: 0px;
+    
+}
+#con_f_t {
+width: 100%;
+height: 100%;    
+
+margin: 5px;
+color: white;
+background: #F2CF1D;
+border: black  3px solid;
+
+}
+
+#con_f{
+    background: #D94625;
+    color: white;
+}  
+#con_t{
+    background: #F2CF1D;
+    color: black;
+    margin: 20px;
+}
+#con_c{
+    width: 400px;
+    height: 30px;
+    border: black 2px solid;
+    background: gray;
+    margin: 5px;
+}
+#con_im{
+    width: 300px;
+    height: 100%;
+    border: black 2px solid;
+    background: gray;
+    margin: 20 px;
+    padding: 20px;
+
+}
+#imagen {
+    
+    float: right;
+    width: 48%;
+    height: 100%;
+   vertical-align: middle;
+    padding: 10px;  
+    margin: 2px;
+    
+    align-content: center;
+    justify-content: center;
+}
+#tabla{
+    border: black 2px solid;
+   /* border-collapse:collapse ;*/
+    table-layout: fixed;
+}
+td,th{
+    padding: 10px;
+    border: black 2px solid;
+}
+th{
+    background: #5499FF;
+}
+td{
+    background: white;
+}
+
+
+#texto_img {
+    position: relative;
+    float: left;
+    width: 50%;
+   
+    margin: 2px;
+    
+    
+}
+
+
+
+#con_buscador input{
+    width: 500px;
+    height: 50px;
+   background:#5499FF;
+   
+}
+
+#con_buscador{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#columnas{
+    column-count:4;
+    column-gap:20px;
+    column-rule:4px dotted gray;
+ }
+
+ .section{
+    background: #ffffff;
+    display: flex;
+}
+    .articulos{
+        background: #b8b7b1;
+        flex: 2 1 auto;
+        *display: flex;
+        *flex-flow: row wrap;
+        
+    }
+        .article{
+            background: #ebdb04;
+            flex: 1 1 40%;
+            color: #444;
+            font-size: 14px;
+            letter-spacing: 1px;
+            margin: 10px 10px 0 0px;
+            flex: 1 1 45%;
+            background: #ececec;
+    
+        }
+
+        h1{
+            background: #D94625;
+            color: white;
+        }
+        p{
+            background: #ececec;
+        }
+        .efecto{
+            box-shadow: inset 0px 0px 15px #b9c1cb, 0px 0px 5px #adb8c4;
+            background: #b1acab;
+            border: 1px solid gray;
+            position: relative;
+            display: inline-block;
+            font-size: 16px;
+            padding: 3px 25px 3px 11px;
+            margin-top: 15px;
+            margin-bottom: 4px;
+            border-radius: 6px;
+        }
+
+        .transparencias{
+            padding: 10px 5px;
+            margin: 10px 10px;
+            background-color: rgba(212, 98, 22, 0.2);
+            border-style: double;
+            text-align: center;
+        }
+        .degradado{
+    display: inline-block;
+    width: 600px;
+    height: 110px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    background: -webkit-linear-gradient(top, #444, gold);
+
+            
+        }
+        .radial{
+            width: 450px;
+            height: 200px;
+            margin-bottom: 50px;
+            border-radius: 4px;
+            float: left;
+            background: -webkit-radial-gradient(100px 75px,circle closest-side, rgb(201, 21, 21), yellow, rgb(192, 13, 13));
+        }
+
+      
+        #martillo {
+            animation:animacion_martillo 2s;
+            animation-timing-function: ease-out;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-delay: 1s; 
+          }
+
+          @keyframes animacion_martillo {
+            0% {
+              transform: rotate(0deg);
+              top:0px
+            }
+            50% {
+              transform: rotate(90deg);
+              top:57px
+            }
+            100% {
+              transform: rotate(0deg);
+              top:0px
+            }
+          }
+
+          .boton a{
+              background: #fff;
+              font-size: 18px;
+
+          }
+          .boton a:hover{
+              background: goldenrod;
+          }
+          

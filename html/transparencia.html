@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+    <title>Transparencia y Degradados</title>
+
+</head>
+
+<body>
+    <header>
+        
+         <div> <img src="imagenes/ca-2.jpg" width="100%" height="350px" ></div>  
+
+         <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="imagen.html">Imagenes</a> </li>
+                <li><a href="columnastextos.html">Columna de textos</a></li>
+                <li><a href="transparencia.html">Transparencia y degradados</a></li>
+                <li><a href="animaciones.html">Animaciones</a></li>
+                <li><a href="canvas.html">Canvas</a></li>
+                <li><a href="adaptacionmovil.html">Adaptacion Movil</a></li>
+                <li><a href="listas.html">Listas</a></li>
+                <li><a href="enlaces.html">Enlaces</a></li>
+                <li><a href="formularios.html">Formulario</a></li> 
+                <li><a href="tablas.html">Tablas</a></li>
+                <li><a href="videoaudio.html">Videos y audio</a></li>       
+            </ul>
+
+        </nav>  
+</header>
+
+<section class="section">
+
+    <div class="articulos">
+        <p>Existen diferentes formas de utilizar los colores en nuestro codigo HTML, haciendo uso de los colores predefinidos, llamandolos con su nomnbr Yellow, o haciendo uso en formato hexadecimal:</p>
+        <pre class="efecto">
+            color=tomato;
+            color=#FF6347:
+        </pre>
+        <p>Podemos hacer uso y manejo del color de diferentes maneras, en este seccion vamos
+            vamos a dar un fondo con una transparencia usando los colores rgba (rojo, verde, azul, transparencia)': </p>
+            <pre class="efecto">background-color:rgba(255,0,0,<span style="color:red"> 0.4</span>);
+            </pre>
+
+        <article class="article">
+         <h1>Transparencia</h1>
+         <p>Asi es como quedaria un fondo con tranparencia:</p>
+            <h4 class="transparencias">Prueba de Transparencia</h4>
+
+        </article>
+
+        <article class="article">
+            <h1>Degradados</h1>
+            <p>Existen dos degradados (Degradados lineales y radiales), cada uno con una sintaxis diferente: </p>
+            <p></p>
+            <h1>Sintaxis lineal</h1>
+            <p>Definimos dónde empieza el degradado (top, bottom, right, left) o bien indicando un ángulo (45deg), seguido de los colores que compondrán el degradado y de manera opcional se puede indicar cuánto durará cada color (en porcentaje).</p>
+            <pre class="efecto">background:linear-gradient(<span class="rojo"><b>dónde empieza</b></span>, <span class="rojo"><b>color1</b></span>, <span class="verde"><b>40%</b></span>, <span class="rojo"><b>color2</b></span>, <span class="verde"><b>60%</b></span>);
+            </pre>
+            <br>
+            <h1>Degradados lineales</h1>
+            <div class="degradado"></div>
+           
+        </article>
+
+        <article class="article">
+            <h1>Sintaxis radiales</h1>
+            <p>Primero definimos dónde está el centro del degradado a través de una posición horizontal y luego una vertical (utilizando center, top, bottom, right, left o unas coordenadas en píxeles 125px 200px). Seguidamente se define la forma (circle o ellipse). Después opcionalmente se puede definir cómo se expandirá el degradado. Por último se definen los colores que compondrán el degradado y de manera opcional se puede indicar cuánto durará cada color (en porcentaje).</p>
+            <pre class="efecto">background:radial-gradient(<span class="rojo"><b>dónde está el centro</b></span>, <span class="rojo"><b>circle/ellipse</b></span> <span class="verde"><b>expansión del degradado</b></span>, <span class="rojo"><b>color1</b></span>, <span class="verde"><b>40%</b></span>, <span class="rojo"><b>color2</b></span>, <span class="verde"><b>60%</b></span>);
+            </pre>
+
+            <h1>Degradados radiales</h1>
+            <div class="radial"></div>
+        </article>
+
+    </div>
+</section>
+    
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+    <title>Responsive</title>
+
+</head>
+
+<body>
+    <header>
+        
+        <div> <img src="imagenes/ca-2.jpg" width="100%" height="350px" ></div>  
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="imagen.html">Imagenes</a> </li>
+                <li><a href="columnastextos.html">Columna de textos</a></li>
+                <li><a href="transparencia.html">Transparencia y degradados</a></li>
+                <li><a href="animaciones.html">Animaciones</a></li>
+                <li><a href="canvas.html">Canvas</a></li>
+                <li><a href="adaptacionmovil.html">Adaptacion Movil</a></li>
+                <li><a href="listas.html">Listas</a></li>
+                <li><a href="enlaces.html">Enlaces</a></li>
+                <li><a href="formularios.html">Formulario</a></li> 
+                <li><a href="tablas.html">Tablas</a></li>
+                <li><a href="videoaudio.html">Videos y audio</a></li>       
+            </ul>
+
+        </nav>
+                 
+        
+</header>
+<section class="section">
+ 
+
+    <div class="articulos">
+        
+        <article class="article">
+            <h1>Modo responsive</h1>
+            <p>Para hacer que nuestros sitios web se adapten a cualquier dispositivo, debemos utilizar @mediaqueries, los cuales se configuran en la hoja de estilos, juegan un papel muy importante para que los sitios web sean responsive. </p>
+            <h1>Como funciona:</h1>
+            <p>Podemos ajustar nuestro sitio web teniendo en cuenta las siguientes resoluciones estandares ajustables por medio de los pixles:</p>
+            <br>
+            <h5>Resoluciones iguales o menores de 480 píxeles: para móviles</h5>
+            <h5>Resoluciones de 481px a 768 píxeles: para tablets<h5>
+            <h5>Resoluciones mayores de 768 píxeles: para ordenadores</h5>
+            <br>
+            <h1>Estructura de un media queri</h1>
+            <article>
+                <pre class="efecto">@media only screen and (<span class="rojo">max</span>-width:320px){
+                    <span class="gris">&lt;!--Este mediaquerie se ejecutará sólo cuando la resolución horizontal sea <b>menor</b> de 320 píxeles--&gt;</span>
+                  }
+                  
+                  @media only screen and (<span class="rojo">min</span>-width:980px){
+                    <span class="gris">&lt;!--Este mediaquerie se ejecutará sólo cuando la resolución horizontal sea <b>mayor</b> de 980 píxeles--&gt;</span>
+                  }
+                  </pre>
+                  <h1>Para que sirve</h1> 
+                  <p>Nos permite programar que clases, etiquetas, identificadores se modifiquen dependiendo la resolucion y el dispositivo que este leyendo nuestro sitio web, podemos decir que en una relosucion de XXXpx, la letra disminuya, se ajusten cajas, cambie de color los fondos, se oculten ciertas cosas, aplicar efectos... Todo esto va de la mano de flexbox, que permite adecuar nuestros sitios web responsives.</p> 
+            </article>
+          
+        </article>
+
+     
+
+    </div>
+</section>
+</body>
+</html>
