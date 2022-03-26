@@ -27,7 +27,7 @@ font-size: 16px;
 }
 nav li{
     display: inline-block;
-    width: 150px;
+    min-width: 150px;
 	height: 40px;
     background-color:#5CACF2 ;
     text-align: center;
